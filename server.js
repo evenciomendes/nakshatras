@@ -14,7 +14,7 @@ app.use(expressLayouts)
 app.use(express.static('public'))
 
 const mongoose=require('mongoose')
-mongoose.connect( process.env.DATABASE_URL||'mongodb://localhost/nakshatras',
+mongoose.connect( process.env.DATABASE_URL,//||'mongodb://localhost/nakshatras',
     { useNewUrlParser: true
      //   , useUnifiedTopology:true,
       //  useCreateIndex:true 
